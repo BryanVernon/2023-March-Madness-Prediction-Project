@@ -1,10 +1,13 @@
+library(readr)
+library(dplyr)
+
 # Import data
-mtourney <- read_csv("C:/Users/Bryan/Downloads/MNCAATourneyDetailedResults.csv")
-mreg <- read_csv("C:/Users/Bryan/Downloads/MRegularSeasonDetailedResults.csv.zip")
-mseed <- read_csv("C:/Users/Bryan/Downloads/MNCAATourneySeeds.csv")
-wreg <- read_csv("C:/Users/Bryan/Downloads/WRegularSeasonDetailedResults.csv.zip")
-wseed <- read_csv("C:/Users/Bryan/Downloads/WNCAATourneySeeds.csv")
-wtourney <- read_csv("C:/Users/Bryan/Downloads/WNCAATourneyDetailedResults.csv")
+mtourney <- read_csv("C:/Users/Bryan/Desktop/2023 March Madness Prediction Project/Data/MNCAATourneyDetailedResults.csv")
+mreg <- read_csv("C:/Users/Bryan/Desktop/2023 March Madness Prediction Project/Data/MRegularSeasonDetailedResults.csv")
+mseed <- read_csv("C:/Users/Bryan/Desktop/2023 March Madness Prediction Project/Data/MNCAATourneySeeds.csv")
+wreg <- read_csv("C:/Users/Bryan/Desktop/2023 March Madness Prediction Project/Data/WRegularSeasonDetailedResults.csv")
+wseed <- read_csv("C:/Users/Bryan/Desktop/2023 March Madness Prediction Project/Data/WNCAATourneySeeds.csv")
+wtourney <- read_csv("C:/Users/Bryan/Desktop/2023 March Madness Prediction Project/Data/WNCAATourneyDetailedResults.csv")
 
 swap <- mreg
 colnames(swap)<- c(
